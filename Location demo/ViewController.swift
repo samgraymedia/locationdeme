@@ -28,7 +28,7 @@ class ViewController: UIViewController {
 
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Got some location data")
+     //   print("Got some location data")
         guard let location = locations.last else {
             return
         }
@@ -39,6 +39,7 @@ extension ViewController: CLLocationManagerDelegate {
 
 extension ViewController: SecondViewControllerDelegate {
     func somethingChanged() {
-        print("something changed")
+        //print the changed var
+        print(changeThis)
     }
 }
